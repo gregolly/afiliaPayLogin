@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div class="login centralizar">
+        <div class="logo">
+            <img src="img/afiliapay.png" alt="logo da empresa afiliapay">
+        </div>
+        <h3 class="mb-4">Entrar</h3>
+        <form action="" id="formLogin">
+            <div class="form-group">
+                <input type="email" autocomplete="email" placeholder="E-mail" name="email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Senha" name="password" required>
+            </div>
+            <div class="row continuar">
+                <div class="col esquerda">
+                    <label class="checkbox">
+                        <input type="checkbox" name="remember">
+                        <span class="continuar-logado">Continuar Logado</span>
+                    </label>
+                </div>
+                <div class="col direita">
+                    <a href="recuperar.html">Esqueceu a senha?</a>
+                </div>
+            </div>
+            <button class="btn btn-focus login-enter -enter">Entrar</button>
+        </form>
+        <div class="cadastro">
+            <span>Ainda não tem uma conta?</span>
+            <a href="cadastro.html">Cadastre-se</a>
+        </div>
+    </div>
+</body>
+</html>

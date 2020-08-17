@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cadastro login centralizar cadastro-page">
+        <div class="logo">
+            <img src="img/afiliapay.png" alt="logo da empresa afiliapay">
+        </div>
+        <h3 class="mb-4">Cadastrar</h3>
+        <p class="text-center mb-5 text-light">Entre com suas informações para criar sua conta:</p>
+        <form action="" id="formLogin">
+            <div class="form-group">
+                <input type="text" autocomplete="tel-area-code" placeholder="Nome completo" name="nomeCompleto" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="E-mail" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="CPF ou CNPJ" name="documento"  required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Senha" name="password"  required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Confirme a senha" name="password_confirmation"  required>
+            </div>
+            <div class="container_produtor_afiliado">
+                <span class="produtor -produto_afiliado">?</span>
+                <p class="modal" id="produtor">O produtor é a pessoa responsável por criar um produto/curso online, 
+                    ou seja, ele é responsável por responder 
+                    as dúvidas dos consumidores sobre o conteúdo do produto.</p>
+                <span class="afiliado -produto_afiliado">?</span>
+                <p class="modal" id="afiliado">O afiliado é alguém que deseja receber comissões 
+                    para indicar/promover produtos de produtores.</p>
+            </div>
+            <div class="form-group text-center radio-forms row">
+                <div class="btn-group btn-group-toggle custom-radio-button-container" data-click>
+                    <label class="btn  custom-radio-button" for="">
+                        <input type="radio" name="perfil" autocomplete="off" value="1">
+                        Sou produtor
+                    </label>
+                </div>
+                <div class="btn-group btn-group-toggle custom-radio-button-container  -second" data-click>
+                    <label class="btn  custom-radio-button" for="">
+                        <input type="radio" name="perfil" autocomplete="off" value="1">
+                        Sou afiliado
+                    </label>
+                </div>
+                <div class="btn-group btn-group-toggle custom-radio-button-container " data-click>
+                    <label class="btn  custom-radio-button" for="">
+                        <input type="radio" name="perfil" autocomplete="off" value="1">
+                        Sou produtor e afiliado
+                    </label>
+                </div>
+            </div>
+            <div class="row continuar">
+                <div class="col esquerda">
+                    <label class="checkbox">
+                        <input type="checkbox" name="remember">
+                        <span class="continuar-logado">Eu aceito os termos e condições.</span>
+                    </label>
+                </div>
+            </div>
+            <div class="row btns-cadastro justify-content-between pb-3 pt-3">
+                <button class="btn btn-focus login-enter col">Cadastrar</button>
+                <button class="btn btn-focus login-enter cancelar-cadastro col">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    function activeAfiliadosProdutor(){
+        const radioButton = document.querySelectorAll('[data-click]')
+        function radios(i){
+        radioButton.forEach((el) =>{
+                el.classList.remove('ativo')
+            })
+            radioButton[i].classList.add('ativo')
+        } 
+
+        radioButton.forEach((el, i) =>{
+            el.addEventListener('click', () =>{
+                radios(i)
+            })
+        })
+    }
+    activeAfiliadosProdutor()
+
+
+    function modalAfiliados(){
+        const modal = document.querySelectorAll('.modal')
+        const interrogacao = document.querySelectorAll('.-produto_afiliado')
+
+    function DuvidaModal(i){
+        modal.forEach(el =>{
+            el.classList.toggle('block')
+        })
+        modal[i].classList.toggle('block')
+    }
+
+    interrogacao.forEach((el, i) =>{
+        el.addEventListener('click', () =>{
+            DuvidaModal(i)
+        })
+    })
+    }
+    modalAfiliados()
+</script>
