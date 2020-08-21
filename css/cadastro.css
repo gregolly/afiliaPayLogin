@@ -54,7 +54,7 @@ table {
 *{
     box-sizing: border-box;
 }
-.layout-login{
+.layout-cadastro{
     background-image: url('../img/10861.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +64,7 @@ table {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #212121;
 }
-.layout-login .centralizar{
+.layout-cadastro .centralizar{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -72,48 +72,48 @@ table {
     max-width: 500px;
     width: 420px;
 }
-.layout-login .login.cadastro{
+.layout-cadastro .login.cadastro{
     transform: translate(-50%, -28%);
 }
-.layout-login .login h3{
+.layout-cadastro .login h3{
     font-size: 24px;
     color: #fff;
     text-align: center;
 }
-.layout-login .login .logo{
+.layout-cadastro .login .logo{
     margin-bottom: 40px;
     text-align: center;
 }
-.layout-login .checkbox{
+.layout-cadastro .checkbox{
     color: #fff;
 }
-.layout-login .form-group input{
+.layout-cadastro .form-group input{
     width: 100%;
     padding: 20px;
     border-radius: 30px;
     border: none;
     outline: none;
 }
-.layout-login .direita{
+.layout-cadastro .direita{
     text-align: right;
 }
-.layout-login .direita a{
+.layout-cadastro .direita a{
     color: #fff;
 }
-.layout-login .cadastro .continuar-logado{
+.layout-cadastro .cadastro .continuar-logado{
     position: relative;
     top: -2px;
     left: 5px;
 }
-.layout-login .continuar-logado{
+.layout-cadastro .continuar-logado{
     position: absolute;
     top: -2px;
     left: 35px;
 }
-.layout-login .-enter{
+.layout-cadastro .-enter{
     margin: 40px auto;
 }
-.layout-login .login-enter{
+.layout-cadastro .login-enter{
     text-align: center;
     color: #fff;
     background-image: 
@@ -124,36 +124,36 @@ table {
     border-radius: 30px;
     font-size: 20px;
 }
-.layout-login .login-enter:hover{
+.layout-cadastro .login-enter:hover{
     transform: scale(1.05);
     transition: .5s ease-in-out;
 }
-.layout-login .login-enter.cancelar-cadastro{
+.layout-cadastro .login-enter.cancelar-cadastro{
     background: none;
     border: 1px solid #fff;
     opacity: .7;
     margin-left: 10px;
 }
-.layout-login .cadastro{
+.layout-cadastro .cadastro{
     text-align: center;
 }
-.layout-login .cadastro a{
+.layout-cadastro .cadastro a{
     color: #D9B551;
 }
-.layout-login .cadastro span{
+.layout-cadastro .cadastro span{
     color: #fff;
 }
-.layout-login .esquerda{
+.layout-cadastro .esquerda{
     text-align: left;
 }
 /*pagina recupera*/
-.layout-login .texto-recuperar{
+.layout-cadastro .texto-recuperar{
     color: #fff;
     font-size: 16px;
     line-height: 1.4;
     text-align: center;
 }
-.layout-login .alterar, .layout-login .cancelar{
+.layout-cadastro .alterar, .layout-cadastro .cancelar{
     background-image: linear-gradient(to bottom right,#c2922c,#fbdb9a);
     width: 200px;
     border: none;
@@ -162,39 +162,39 @@ table {
     border-radius: 30px;
     font-size: 18px;
 }
-.layout-login .recuperar .esquerda{
+.layout-cadastro .recuperar .esquerda{
     margin-right: 20px;
 }
-.layout-login .color{
+.layout-cadastro .color{
     color: #fff !important;
 }
-.layout-login .alterar:hover,
-.layout-login .cancelar:hover{
+.layout-cadastro .alterar:hover,
+.layout-cadastro .cancelar:hover{
     transform: scale(1.05);
     transition: .5s ease-in-out;
 }
-.layout-login .btn input[type="radio"]{
+.layout-cadastro .btn input[type="radio"]{
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none;
 }
-.layout-login .btn-secondary label{
+.layout-cadastro .btn-secondary label{
     background: none;
     border: none;
     color: #212121;
 }
-.layout-login .radio-forms{
+.layout-cadastro .radio-forms{
     margin: 20px auto;
     justify-content: center;
     position: relative;
 }
-.layout-login .radio-forms .btn-group:first-child{
+.layout-cadastro .radio-forms .btn-group:first-child{
     border-right: 1px solid #ccc;
 }
-.layout-login .container_produtor_afiliado{
+.layout-cadastro .container_produtor_afiliado{
     position: relative;
 }
-.layout-login .produtor{
+.layout-cadastro .produtor{
     background-image: 
     linear-gradient(to bottom right,#c2922c,#fbdb9a);;
     width: 15px;
@@ -206,7 +206,7 @@ table {
     cursor: pointer;
     line-height: 1;
 }
-.layout-login .afiliado{
+.layout-cadastro .afiliado{
     background-image: 
     linear-gradient(to bottom right,#c2922c,#fbdb9a);
     width: 15px;
@@ -218,14 +218,14 @@ table {
     cursor: pointer;
     line-height: 1;
 }
-.layout-login #produtor{
+.layout-cadastro #produtor{
     display: none;
 }
-.layout-login #afiliado{
+.layout-cadastro #afiliado{
     display: none;
 }
-.layout-login #produtor,
-.layout-login #afiliado{
+.layout-cadastro #produtor,
+.layout-cadastro #afiliado{
     position: absolute;
     top: -115px;
     width: 250px;
@@ -236,14 +236,14 @@ table {
     padding: 15px;
     height: 110px;
 }
-.layout-login .-second{
+.layout-cadastro .-second{
     border-right: 1px solid #ccc;
 }
-.layout-login .ativo{
+.layout-cadastro .ativo{
     background-color: #D9B551 !important;
     color: #fff !important;
 }
-.layout-login .block{
+.layout-cadastro .block{
     display: block !important;
 }
 [data-click]{
@@ -257,26 +257,26 @@ table {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.layout-login #email-incorreto,
-.layout-login #senha-incorreta{
+.layout-cadastro #email-incorreto,
+.layout-cadastro #senha-incorreta{
     display: block;
 }
-.layout-login .email-incorreto,
-.layout-login .senha-incorreta{
+.layout-cadastro .email-incorreto,
+.layout-cadastro .senha-incorreta{
     display: none !important;
 }
 @media (max-width: 768px){
-    .layout-login{
+    .layout-cadastro body{
         background-attachment: fixed;
     }
-    .layout-login .login{
+    .layout-cadastro .login{
         width: 300px;
     }
-    .layout-login input[type="email"], .layout-login input[type="password"]{
+    .layout-cadastro input[type="email"], .layout-cadastro input[type="password"]{
         max-width: 100%;
         width: 300px;
     }
-    .layout-login .radio-forms .btn-group:first-child{
+    .layout-cadastro .radio-forms .btn-group:first-child{
         border-right: none;
     }
     [data-click]:first-child{
@@ -291,26 +291,26 @@ table {
         border-radius: 10px;
         margin-bottom: 5px;
     }
-    .layout-login .btns-cadastro{
+    .layout-cadastro .btns-cadastro{
         flex-direction: column;
         align-items: center;
     }
-    .layout-login .login-enter.cancelar-cadastro{
+    .layout-cadastro .login-enter.cancelar-cadastro{
         margin-left: 0;
         margin-top: 30px;
     }
-    .layout-login .recuperar .esquerda{
+    .layout-cadastro .recuperar .esquerda{
         margin-right: 0px;
         margin-bottom: 20px;
     }
-    .layout-login .produtor{
+    .layout-cadastro .produtor{
         left: 40px;
         border-radius: 50%;
         width: 30px;
         height: 30px;
         line-height: 2;
     }
-    .afiliado{
+    .layout-cadastro .afiliado{
         width: 30px;
         height: 30px;
         right: 38px;

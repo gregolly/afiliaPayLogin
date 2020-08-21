@@ -8,9 +8,9 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
     crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
-<body>
+<body class="layout-cadastro">
     <div class="cadastro login centralizar cadastro-page">
         <div class="logo">
             <img src="img/afiliapay.png" alt="logo da empresa afiliapay">
@@ -38,12 +38,12 @@
             </div>
             <div class="container_produtor_afiliado">
                 <span class="produtor -produto_afiliado">?</span>
-                <p class="modal" id="produtor">O produtor é a pessoa responsável por criar um produto/curso online, 
+                <p class="modal" id="produtor">O afiliado é alguém que deseja receber comissões 
+                    para indicar/promover produtos de produtores.</p>
+                <span class="afiliado -produto_afiliado">?</span>
+                <p class="modal" id="afiliado">O produtor é a pessoa responsável por criar um produto/curso online, 
                     ou seja, ele é responsável por responder 
                     as dúvidas dos consumidores sobre o conteúdo do produto.</p>
-                <span class="afiliado -produto_afiliado">?</span>
-                <p class="modal" id="afiliado">O afiliado é alguém que deseja receber comissões 
-                    para indicar/promover produtos de produtores.</p>
             </div>
             <div class="form-group text-center radio-forms row">
                 <div class="btn-group btn-group-toggle custom-radio-button-container" data-click>
@@ -101,7 +101,7 @@
     activeAfiliadosProdutor()
 
 
-    function modalAfiliados(){
+    function modalAP(){
         const modal = document.querySelectorAll('.modal')
         const interrogacao = document.querySelectorAll('.-produto_afiliado')
 
@@ -118,5 +118,5 @@
         })
     })
     }
-    modalAfiliados()
+    modalAP()
 </script>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/vue.min.js"></script>
 </head>
-<body>
+<body class="layout-login">
     <div class="login centralizar">
         <div class="logo">
             <img src="img/afiliapay.png" alt="logo da empresa afiliapay">
@@ -20,9 +20,13 @@
         <form action="" id="formLogin">
             <div class="form-group">
                 <input type="email" autocomplete="email" placeholder="E-mail" name="email">
+                <small id="email-incorreto" class="text-center text-light mt-2 email-incorreto">
+                    Email está incorreto ou não existe!</small>
             </div>
             <div class="form-group">
                 <input type="password" placeholder="Senha" name="password" required>
+                <small id="senha-incorreta" class="text-center text-light mt-2 senha-incorreta">
+                    A senha está incorreto!</small>
             </div>
             <div class="row continuar">
                 <div class="col esquerda">
@@ -32,7 +36,7 @@
                     </label>
                 </div>
                 <div class="col direita">
-                    <a href="recuperar.html">Esqueceu a senha?</a>
+                    <a href="alterarSenha.html">Esqueceu a senha?</a>
                 </div>
             </div>
             <button class="btn btn-focus login-enter -enter">Entrar</button>
